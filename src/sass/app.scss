@@ -1,0 +1,12 @@
+@import "config/variables";
+@import "config/fonts.scss";
+@import "config/placeholders";
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "base/body";
+@import "base/sections";
+@import "base/forms";
+
+@import "modules/descorators";
+@import "modules/lists";

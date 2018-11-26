@@ -1,0 +1,49 @@
+.intro-form {
+  padding: 30px;
+
+  &__title {
+    padding: 20px 35px;
+    margin: 0 -35px 20px;
+  }
+}
+
+.form {
+  &-group {
+    position: relative;
+
+    &.has-content {
+      .form-label {
+        bottom: 100%;
+        transform: translateY(15%);
+        font-size: 80%;
+        left: 0;
+        color: $gray-600;
+      }
+    }
+  }
+
+  &-label {
+    position: absolute;
+    left: 10px;
+    bottom: 50%;
+    transform: translateY(50%);
+    margin-bottom: 0;
+    color: $gray-400;
+    @extend %trans;
+  }
+
+  &-control {
+    box-shadow: none !important;
+    background-color: transparent !important;
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid $gray-400;
+    color: #fff;
+    @extend %trans;
+
+    &:focus {
+      border-bottom-color: $primary;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+$path: '/dist';
+
+@font-face {
+    font-family: 'FuturaBookC';
+    src: url($path + '/subset-FuturaBookC.eot');
+    src: url($path + '/subset-FuturaBookC.eot?#iefix') format('embedded-opentype'),
+    url($path + '/subset-FuturaBookC.woff2') format('woff2'),
+    url($path + '/subset-FuturaBookC.woff') format('woff'),
+    url($path + '/subset-FuturaBookC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Futura';
+    src: url($path + '/subset-FuturaDemiC.eot');
+    src: url($path + '/subset-FuturaDemiC.eot?#iefix') format('embedded-opentype'),
+        url($path + '/subset-FuturaDemiC.woff2') format('woff2'),
+        url($path + '/subset-FuturaDemiC.woff') format('woff'),
+        url($path + '/subset-FuturaDemiC.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+

@@ -1,0 +1,41 @@
+.line-decorator {
+  &--left {
+    position: relative;
+    padding-left: 65px;
+
+    &::before {
+      position: absolute;
+      width: 48px;
+      border-bottom: 2px solid $primary;
+      left: 0;
+      top: 12px;
+      content: '';
+    }
+  }
+}
+
+.title-decorator {
+  padding-bottom: 10px;
+  line-height: 1;
+
+  span {
+    position: relative;
+    display: inline-block;
+
+    &::before {
+      position: absolute;
+      border-bottom: 1px solid $primary;
+      bottom: -10px;
+      content: '';
+      width: 5000px;
+    }
+  }
+
+  &--right span::before {
+    left: 0;
+  }
+
+  &--left span::before {
+    right: 0;
+  }
+}
